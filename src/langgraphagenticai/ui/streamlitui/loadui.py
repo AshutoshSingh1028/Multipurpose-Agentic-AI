@@ -22,12 +22,7 @@ class LoadStreamlitUI:
         "decision": None
     }
 
-    def render_requirements(self):
-        st.markdown("## Requirements Submission")
-        st.session_state.state["requirements"] = st.text_area("Enter your project requirements here:", height=200, key="requirements_input")
-        if st.button("Submit Requirements", key="submit_requirements"):
-            st.session_state.state["current_step"] = "generate_user_stories"
-            st.session_state.IsSDLC = True
+
 
 
     def load_streamlit_ui(self):
@@ -66,7 +61,7 @@ class LoadStreamlitUI:
             
             if "state" not in st.session_state:
                 st.session_state.state = self.initialize_session()
-            self.render_requirements()
+            
             
             
         

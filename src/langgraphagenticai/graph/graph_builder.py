@@ -8,7 +8,7 @@ from src.langgraphagenticai.nodes.basic_chatbot_node import BasicChatbotNode
 class GraphBuilder:
     def __init__(self, model):
         self.llm = model
-        self.graph_builder = StateGraph()
+        self.graph_builder = StateGraph(State)
 
     def basic_chatbot_build_graph(self):
         """
