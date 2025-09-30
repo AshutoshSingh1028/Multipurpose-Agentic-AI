@@ -18,6 +18,7 @@ Access the deployed app here:
 - **Chatbot with Tools**: Enhanced with search tools (Tavily, Wikipedia, Arxiv, etc.).
 - **Streamlit UI**: Interactive chat interface with tool call transparency.
 - **LangGraph Integration**: Modular graph-based agent orchestration.
+- **Groq LLM Support**: Easily switch between Groq models.
 
 ---
 
@@ -38,3 +39,23 @@ pip install -r requirements.txt
 ```bash
 streamlit run app.py
 ```
+
+---
+
+## Configuration
+
+- **API Keys:**
+	- **Groq**: Required for LLM access.
+	- **Tavily**: Required for search tool integration.
+	Enter these in the Streamlit sidebar when prompted.
+
+- **Model & Use Case Selection:**
+	Choose your preferred LLM and use case (Basic Chatbot or Chatbot with Tool) from the sidebar.
+
+---
+
+## How It Works
+
+- The app uses a modular graph-based approach to orchestrate agentic workflows.
+- For the "Chatbot with Tool" use case, it integrates external tools (search, Wikipedia, Arxiv) into the conversation flow.
+- The UI is built with Streamlit for interactive chat and tool transparency.
