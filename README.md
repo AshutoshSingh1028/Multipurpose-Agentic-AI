@@ -38,29 +38,3 @@ pip install -r requirements.txt
 ```bash
 streamlit run app.py
 ```
-
----
-
-## Project Structure
-
-```
-AgenticRAGProject/
-├── app.py                  # Streamlit app entry point
-├── requirements.txt        # Python dependencies
-├── README.md               # Project documentation
-└── src/
-	└── langgraphagenticai/
-		├── tools/          # Tool implementations (search, summarizer, etc.)
-		├── nodes/          # Agent node logic
-		├── graph/          # Graph builder and orchestration
-		├── ui/             # Streamlit UI components
-		└── ...
-```
-
----
-
-## License
-
-This project is for educational and research purposes. See `LICENSE` for details if provided.
-
----
